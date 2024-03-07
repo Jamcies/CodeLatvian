@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/all.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/all.min.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/regular.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/regular.min.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/">
+    <script src="../static/fontsawesome/js/all.js"></script>
+    <script src="../static/fontsawesome/js/regular.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Fira+Code&family=Fira+Mono:wght@400;500;700&family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>CodeLatvian</title>
+    <link rel="icon"  href="../static/bildes/logo_logo_Tumsh.ico">
+  </head>
+
+    <body, onload="flashMessage()">
+    
+        
+        
+        <!----Augšējā daļa ----->
+       <div class="augsha_teor">
+
+       
+            <header>
+                <h5 class="stundas_nosaukums">Pamati</h5>
+            </header>
+            
+            <div class="progresa">
+                <span class="spani_izp"></span>
+                <span class="spani_izp"></span>
+                <span class="spani_izp"></span>
+                <span class="spani_izp"></span>
+                <span class="spani_izp"></span>
+                <span class="spani_izp"></span>
+                <span class="spani_izp"></span>
+                <span class="spani_izp"></span>
+                <span class="spani"></span>
+                <span class="spani"></span>
+            </div>
+        
+            <hr>
+        </div>
+
+        <!----Uzdevums----->
+    <div class="uzdevumi-3">  
+        <h1>Vai ir būtiska atšķirība starp print(1337) un print("1337") izvadēm?</h1>
+
+        <div>
+            <button class="ja" id="optionA" onclick="selectOption('Jā')">Jā!</button>
+            <button class="ne" id="optionB" onclick="selectOption('Nē')">Nē!</button>
+        </div>
+
+        <p id="selectedOption"></p>
+
+        <p id="errorMessage" class="error-message" style="display: none;">Lūdzu izvēlies pareizo atbildi!</p>
+
+        
+    </div>
+<script>
+    var selectedAnswer = '';
+
+    function selectOption(option) {
+        // Store the selected option
+        selectedAnswer = option;
+
+        // Display the selected option
+        document.getElementById('selectedOption').innerText = 'Tika izvēlēts: ' + option;
+    }
+
+    function checkAnswer() {
+        if (selectedAnswer === 'Jā') {
+            // Redirect to the next page if the answer is correct
+            window.location.href = '{{url_for("teorija8")}}';
+        } else {
+            // Display error message for incorrect answer
+            document.getElementById('errorMessage').style.display = 'block';
+        }
+    }
+
+    function goBack() {
+        // Implement your logic to go back to the previous page
+        window.location.href = "{{url_for('teorija6')}}";
+    }
+</script>
+
+    
+    
+        
+        
+        
+    </body>
+</html>
+
