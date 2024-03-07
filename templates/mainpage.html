@@ -1,0 +1,270 @@
+<!doctype html>
+<html class="unscrollable">
+  <head>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/all.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/all.min.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/regular.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/regular.min.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/">
+    <script src="../static/fontsawesome/js/all.js"></script>
+    <script src="../static/fontsawesome/js/regular.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Fira+Code&family=Fira+Mono:wght@400;500;700&family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>CodeLatvian</title>
+    <link rel="icon"  href="../static/bildes/logo_logo_Tumsh.ico">
+  </head>
+
+<body, onload="flashMessage()">
+  <script>
+    function flashMessage() {
+      if ("{{ flash_message }}" == "True") {
+        alert("Veiksmīgi reģistrēts!");
+      }
+    }
+  </script>
+	
+	<!----Augšējā daļa ----->
+	
+	<header>
+        <img src="../static/bildes/codelatvian.png" draggable="false">
+        <h2 class="kursa_nosaukums">Python kurss</h2>
+		<div class="smadzenes">
+			<i class="fa-solid fa-fire-flame fa-fade fa-2x" style="color: #ffbf52;"></i>
+			<h3 class="skaits">19</h3>
+		</div>
+		<div class="monetas">
+			<i class="fa-duotone fa-coin-front fa-2x moneta" style="--fa-primary-color: #fbc604; --fa-secondary-color: #fcd74f; --fa-secondary-opacity: 1;"></i>
+			<h3 class="skaits">19</h3>
+		</div>
+        <a href="" class="cta">
+			<img class="pfp" src="../static/bildes/hackers.png" draggable="false">
+		</a>
+    </header>
+	
+	<hr>
+	
+	
+	<!----Navigācija ----->
+	
+	<nav>
+		<ul class="katalogs">
+			 <li ><a href="{{url_for('mainpage')}}" class="active">Stunda<i class="fa-regular fa-puzzle-piece puzle" ></i></a></li>
+			 <li><a href="{{url_for('liderusaraksts')}}" class="inactive">Līderu saraksts<i class="fa-regular fa-crown kronis"></i></a></li>
+			 <li><a href="{{url_for('radoshatelpa')}}" class="inactive">Radošā telpa<i class="fa-regular fa-code kods"></i></a></li>
+			 <li><a href="{{url_for('parmums')}}" class="inactive">Par mums<i class="fa-regular fa-circle-info info"></i></a></li>
+			 <div class="versija"><h4>Alfa 0.1</h4></div>
+		</ul>
+	</nav>
+	<!----Kursi-----> 
+    <!----Kursi-----> 
+  <div class="kursi" >
+
+    <div class="stundas">
+
+      <div class="stundas_lokacija">
+        
+        <div class="stunda"><a>
+          <div class="pie" class="stundas_zimejums" style="--p:75;--b:5px;--c:#FF8515;">
+            <block class="aplis">
+              <i class="fa-solid fa-eye fa-3x img" style="color: #403F3F;"></i>
+            </block>
+          </div>
+          <h6 class="stundas_nosaukums">Pamati</h6></a>
+        </div>
+        </div>
+      <div class="stundas_lokacija">
+          <div class="stunda"><a>
+            <div class="pie" class="stundas_zimejums" style="--p:10;--b:5px;--c:#FF8515;">
+              <block class="aplis">
+                <i class="fa-regular fa-bolt fa-3x bolts img" style="color: #403F3F;"></i>
+              </block>
+            </div>
+            <h6 class="stundas_nosaukums">Datu struktūras</h6></a>
+          </div>
+        </div>
+
+      <div class="divas_stundas" >
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr);" >
+        <div class="stundas_lokacija-2">
+          <div class="stunda"><a id="teorija-uzdevums">
+            <div class="pie" class="stundas_zimejums" style="--p:50;--b:5px;--c:#FF8515;">
+              <block class="aplis">
+                <i class="fa-regular fa-keyboard fa-3x img" style="color: #403F3F;"></i>
+              </block>
+            </div>
+            <h6 class="stundas_nosaukums">Algoritmi</h6></a>
+          </div>
+        </div>
+        <div class="stundas_lokacija-2">
+          <div class="stunda">
+            <div class="pie" class="stundas_zimejums" style="--p:25;--b:5px;--c:#FF8515;">
+              <block class="aplis">
+                <i class="fa-regular fa-comments fa-3x img" style="color: #403F3F;"></i>
+              </block>
+            </div>
+            <h6 class="stundas_nosaukums">Atttīstītāki topiki</h6>
+          </div>
+        </div>
+        </div>
+      </div>	
+
+      <div class="tris_stundas" >
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr);" >
+        <div class="stundas_lokacija-2">
+          <div class="stunda">
+            <div class="pie" class="stundas_zimejums" style="--p:50;--b:5px;--c:#FF8515;">
+              <block class="aplis">
+                <i class="fa-solid fa-eye fa-3x img" style="color: #403F3F;"></i>
+              </block>
+            </div>
+            <h6 class="stundas_nosaukums">objektorientētā programmēšana</h6>
+          </div>
+        </div>
+        <div class="stundas_lokacija-2">
+          <div class="stunda">
+            <div class="pie" class="stundas_zimejums" style="--p:25;--b:5px;--c:#FF8515;">
+              <block class="aplis">
+                <i class="fa-regular fa-layer-group fa-3x img" style="color: #403F3F;"></i>
+              </block>
+            </div>
+            <h6 class="stundas_nosaukums">Moduļi </h6>
+          </div>
+        </div>
+        <div class="stundas_lokacija-2">
+          <div class="stunda">
+            <div class="pie" class="stundas_zimejums" style="--p:25;--b:5px;--c:#FF8515;">
+              <block class="aplis">
+                <i class="fa-regular fa-list fa-3x img" style="color: #403F3F;"></i>
+              </block>
+            </div>
+            <h6 class="stundas_nosaukums">Iteratori</h6>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="divas_stundas" >
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr);" >
+        <div class="stundas_lokacija-2">
+          <div class="stunda">
+            <div class="pie" class="stundas_zimejums" style="--p:50;--b:5px;--c:#FF8515;">
+              <block class="aplis">
+                <i class="fa-regular fa-bolt fa-3x bolts img" style="color: #403F3F;"></i>
+              </block>
+            </div>
+            <h6 class="stundas_nosaukums">Frameworku darbība</h6>
+          </div>
+        </div>
+        <div class="stundas_lokacija-2">
+          <div class="stunda">
+            <div class="pie" class="stundas_zimejums" style="--p:25;--b:5px;--c:#FF8515;">
+              <block class="aplis">
+                <i class="fa-regular fa-filter fa-3x img" style="color: #403F3F;"></i>
+              </block>
+            </div>
+            <h6 class="stundas_nosaukums">Map & filter</h6>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="stundas_lokacija">
+        <div class="stunda">
+          <div class="pie" class="stundas_zimejums" style="--p:75;--b:5px;--c:#FF8515;">
+            <block class="aplis">
+              <i class="fa-regular fa-bolt fa-3x bolts img" style="color: #403F3F;"></i>
+            </block>
+          </div>
+          <h6 class="stundas_nosaukums">Ģeneratori</h6>
+        </div>
+        </div>
+
+      <div class="stundas_lokacija">
+        <div class="stunda">
+          <div class="pie" class="stundas_zimejums" style="--p:75;--b:5px;--c:#FF8515;">
+            <block class="aplis">
+              <i class="fa-solid fa-eye fa-3x img" style="color: #403F3F;"></i>
+            </block>
+          </div>
+          <h6 class="stundas_nosaukums">Dekoratori</h6>
+        </div>
+        </div>
+
+      <div class="stundas_lokacija">
+          <div class="stunda">
+            <div class="pie" class="stundas_zimejums" style="--p:10;--b:5px;--c:#FF8515;">
+              <block class="aplis">
+                <i class="fa-regular fa-arrows-spin fa-3x img" style="color: #403F3F;"></i>
+              </block>
+            </div>
+            <h6 class="stundas_nosaukums">Rekurzija</h6>
+          </div>
+        </div>
+
+      <div class="divas_stundas" >
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr);" >
+        <div class="stundas_lokacija-2">
+          <div class="stunda">
+            <div class="pie" class="stundas_zimejums" style="--p:50;--b:5px;--c:#FF8515;">
+              <block class="aplis">
+                <i class="fa-regular fa-keyboard fa-3x img" style="color: #403F3F;"></i>
+              </block>
+            </div>
+            <h6 class="stundas_nosaukums">Klases</h6>
+          </div>
+        </div>
+        <div class="stundas_lokacija-2">
+          <div class="stunda">
+            <div class="pie" class="stundas_zimejums" style="--p:25;--b:5px;--c:#FF8515;">
+              <block class="aplis">
+                <i class="fa-regular fa-keyboard fa-3x img" style="color: #403F3F;"></i>
+              </block>
+            </div>
+            <h6 class="stundas_nosaukums">Mantošana</h6>
+          </div>
+        </div>
+        </div>
+      </div>	
+
+      <div class="stundas_lokacija">
+          <div class="stunda">
+            <div class="pie" class="stundas_zimejums" style="--p:10;--b:5px;--c:#FF8515;">
+              <block class="aplis">
+                <i class="fa-regular fa-bolt fa-3x bolts img" style="color: #403F3F;"></i>
+              </block>
+            </div>
+            <h6 class="stundas_nosaukums">Datu paslēpšana</h6>
+          </div>
+        </div>
+
+
+
+
+      <div class="chuska"><img src="../static/bildes/čūska.png" alt=""></div>
+
+    </div>
+  </div>
+	
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+        $('#teorija-uzdevums').click(function() {
+            $.ajax({
+                url: '/teorija-uzdevums',
+                type: 'GET',
+                success: function(response) {
+                    // Remove unscrollable class
+                    $('html').removeClass('unscrollable');
+                    // Remove inline style if set
+                    $('html').css('overflow', 'visible');
+                    // Update body content
+                    $('body').html(response);
+                }
+            });
+        });
+    });
+  </script>
+</body>
+</html>
+
