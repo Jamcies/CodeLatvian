@@ -1,9 +1,7 @@
-from flask import Flask, render_template, request, redirect, url_for, jsonify
+from flask import Flask, render_template, request, redirect, url_for
 import dbMethods
 import hashlib
-
 app = Flask('app')
-
 @app.route('/',methods=["GET","POST"])
 def login():
   #dbMethods.createTables()
@@ -17,17 +15,12 @@ def login():
     password = passwd2.hexdigest()
     userExists = dbMethods.checkIfUserExists(username, password)
     if userExists:
-      return render_template('mainpage.html')
+      return redirect(url_for('mainpage'))
     else:
       return render_template('login.html')
-
-
-
-
-
-@app.route('/mainpage')
+@app.route('/mainpage',methods=["GET","POST"])
 def mainpage():
-    return render_template('mainpage.html')
+    return render_template("mainpage.html")
 @app.route('/register',methods=["GET","POST"])
 def register():
   if request.method == 'GET':
@@ -48,6 +41,51 @@ def register():
       dbMethods.register(username,password)
       return redirect("mainpage")
 
+
+@app.route('/teorija')
+def teorija():
+  return render_template("teorija-uzd.html")
+
+@app.route('/teorija1')
+def teorija1():
+  return render_template("teorija-uzd1.html")
+
+@app.route('/teorija2')
+def teorija2():
+  return render_template("teorija-uzd2.html")
+
+@app.route('/teorija3')
+def teorija3():
+  return render_template("teorija-uzd3.html")
+
+@app.route('/teorija4')
+def teorija4():
+  return render_template("teorija-uzd4.html")
+
+@app.route('/teorija5')
+def teorija5():
+  return render_template("teorija-uzd5.html")
+
+@app.route('/teorija6')
+def teorija6():
+  return render_template("teorija-uzd6.html")
+
+@app.route('/teorija7')
+def teorija7():
+  return render_template("teorija-uzd7.html")
+
+@app.route('/teorija8')
+def teorija8():
+  return render_template("teorija-uzd8.html")
+
+@app.route('/teorijafinish')
+def teorijafinish():
+  return render_template("teorija-uzd-finish.html")
+
+@app.route('/mainpagepabeigts')
+def jaunsmainpage():
+  return render_template("index-jauns.html")
+
 @app.route('/radoshatelpa')
 def radoshatelpa():
   return render_template("radosha-telpa.html")
@@ -60,92 +98,6 @@ def liderusaraksts():
 def parmums():
   return render_template("par-mums.html")
 
-#eksperiments:
-@app.route('/aplikacija')
-def aplikacija():
-  return render_template("aplikacija.html")
-
-
-
-
-@app.route('/teorija-uzdevums')
-def teorija_uzdevums():
-    return render_template("teorija-uzdevums.html")
-
-
-@app.route('/load_content_1', methods=['GET'])
-def load_content_1():
-    with open('templates/teorija-uzd1.html', 'r') as file:
-        content = file.read()
-    return jsonify({'content': content})
-
-
-@app.route('/load_content_2', methods=['GET'])
-def load_content_2():
-    with open('templates/teorija-uzd2.html', 'r') as file:
-        content = file.read()
-    return jsonify({'content': content})
-
-@app.route('/load_content_3', methods=['GET'])
-def load_content_3():
-    with open('templates/teorija-uzd3.html', 'r') as file:
-        content = file.read()
-    return jsonify({'content': content})
-
-@app.route('/load_content_4', methods=['GET'])
-def load_content_4():
-    with open('templates/teorija-uzd4.html', 'r') as file:
-        content = file.read()
-    return jsonify({'content': content})
-
-
-@app.route('/load_content_5', methods=['GET'])
-def load_content_5():
-    with open('templates/teorija-uzd5.html', 'r') as file:
-        content = file.read()
-    return jsonify({'content': content})
-
-
-@app.route('/load_content_6', methods=['GET'])
-def load_content_6():
-    with open('templates/teorija-uzd6.html', 'r') as file:
-        content = file.read()
-    return jsonify({'content': content})
-
-
-@app.route('/load_content_7', methods=['GET'])
-def load_content_7():
-    with open('templates/teorija-uzd7.html', 'r') as file:
-        content = file.read()
-    return jsonify({'content': content})
-
-
-@app.route('/load_content_8', methods=['GET'])
-def load_content_8():
-    with open('templates/teorija-uzd8.html', 'r') as file:
-        content = file.read()
-    return jsonify({'content': content})
-
-
-@app.route('/load_content_9', methods=['GET'])
-def load_content_9():
-    with open('templates/teorija-uzd9.html', 'r') as file:
-        content = file.read()
-    return jsonify({'content': content})
-
-
-@app.route('/load_content_10', methods=['GET'])
-def load_content_10():
-    with open('templates/teorija-uzd-finish.html', 'r') as file:
-        content = file.read()
-    return jsonify({'content': content})
-
-
-@app.route('/mainpage1', methods=['GET'])
-def mainpage1():
-    with open('templates/mainpage1', 'r') as file:
-        content = file.read()
-    return jsonify({'content': content})
 
 
 if __name__ == "__main__":
