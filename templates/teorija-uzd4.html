@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/all.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/all.min.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/regular.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/regular.min.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/">
+    <script src="../static/fontsawesome/js/all.js"></script>
+    <script src="../static/fontsawesome/js/regular.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Fira+Code&family=Fira+Mono:wght@400;500;700&family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>CodeLatvian</title>
+    <link rel="icon"  href="../static/bildes/logo_logo_Tumsh.ico">
+  </head>
+
+    <body, onload="flashMessage()">
+    
+        
+        
+        <!----Augšējā daļa ----->
+       <div class="augsha_teor">
+
+       
+            <header>
+                <h5 class="stundas_nosaukums">Pamati</h5>
+            </header>
+            
+            <div class="progresa">
+                <span class="spani_izp"></span>
+                <span class="spani_izp"></span>
+                <span class="spani_izp"></span>
+                <span class="spani_izp"></span>
+                <span class="spani_izp"></span>
+                <span class="spani"></span>
+                <span class="spani"></span>
+                <span class="spani"></span>
+                <span class="spani"></span>
+                <span class="spani"></span>
+            </div>
+        
+            <hr>
+        </div>
+
+        <!----Teorija----->
+
+    <div class="teorija">
+      <a href="{{url_for('mainpage')}}" class="atpakal_poga"><img src="../static/bildes/back_button.png"></a>
+        <h1>Datu struktūras</h1>
+        <p>Pēdējie Python pamati, ko apgūsim šī kursa ietvaros ir "loops". Burtiski tulkojot, tās ir "cilpas" taču tās vieglāk uzskatīt, kā koda atkārtojumus. Ir divi svarīgākie cilpu veidi: </p>
+        <ul class="teorija-list">
+            <li>"for loop"</li>
+            <li class="un">un</li>
+            <li>"while loop"</li>
+        </ul>
+        <p>"For loop" tulkojas uz "par katru". Vienkāršāk runājot tas izpildās šādi: "Par katru elementu diapazonā no 0 līdz 10 izpildīt funkciju". Šī funkcija atkārtos sevi 10 reizes, jo no 0 līdz 10 ir desmit cipari, līdz ar ko funckija tiks atkārtota desmit reizes.</p>
+      <br>
+        <p>"While loop" tulkojot, mēs iegūstam atslēgvārdu "kamēr". Tas norāda uz to, ka kamēr nosacījums ir patiess, tas atkārtos kodu tā iekšienē. Brīdī, kad nosacījums neizpildās koda cilpa apstājas un beidz atkārtošanos.</p>
+        
+        <br>
+        <p>Šī ir cilpu jeb "loops" teorija īsumā. Par to praktisko pielietojumu un kodu piemēriem mēs iedziļināsimies nākamajā kursā!</p>
+        <!----Pogas---->
+      <div class="pogas"> 
+        <a href="{{url_for('teorija3')}}"><button id="atpakal"><b>Atpakaļ</b></button></a>
+        <a href="{{url_for('teorija5')}}"><button id="submit"><b>Tālāk</b></button></a></div>
+    </div>
+        
+        
+        
+    </body>
+</html>
+
