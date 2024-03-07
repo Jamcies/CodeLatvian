@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/all.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/all.min.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/regular.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/regular.min.css">
+    <link rel="stylesheet" href="../static/fontsawesome/css/">
+    <script src="../static/fontsawesome/js/all.js"></script>
+    <script src="../static/fontsawesome/js/regular.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Fira+Code&family=Fira+Mono:wght@400;500;700&family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>CodeLatvian</title>
+    <link rel="icon"  href="../static/bildes/logo_logo_Tumsh.ico">
+  </head>
+
+    <body, onload="flashMessage()">
+    
+        
+        
+        <!----Augšējā daļa ----->
+       <div class="augsha_teor">
+
+       
+            <header>
+                <h5 class="stundas_nosaukums">Pamati</h5>
+            </header>
+            
+            <div class="progresa">
+                <span class="spani_izp"></span>
+                <span class="spani_izp"></span>
+                <span class="spani_izp"></span>
+                <span class="spani_izp"></span>
+                <span class="spani"></span>
+                <span class="spani"></span>
+                <span class="spani"></span>
+                <span class="spani"></span>
+                <span class="spani"></span>
+                <span class="spani"></span>
+            </div>
+        
+            <hr>
+        </div>
+
+        <!----Teorija----->
+
+    <div class="teorija">
+      <a href="{{url_for('mainpage')}}" class="atpakal_poga"><img src="../static/bildes/back_button.png"></a>
+        <h1>Datu struktūras</h1>
+        <p>Python valodā ir svarīgi zināt 3 galvenās datu struktūras. Tās ir:</p>
+        <ul class="teorija-list">
+            <li>"lists", jeb saraksti;</li>
+            <li>"tuples", jeb korteži;</li>
+            <li>Un "dictionaries", jeb vārdnīcas.</li>
+        </ul>
+        
+        <p>Lai gan dažas datu struktūras var likties savā starpā līdzīgas, tām ir ļoti būtiskas atšķirības gan pielietojumā, gan to īpašībās.</p>
+        <p>Sāksim ar pašu vienkāršāko datu struktūru jeb sarakstiem. Šādi izskatās saraksts:</p>
+        <div class="koda_piemers">
+            <p>[0, 1, 2, 5, 2, 10]</p>
+        </div>
+        <p>Lai gan piemērā dotais saraksts satur tikai "int" tipa elementus, saraksti var saturēt arī "str", jeb tekstu:</p>
+        <div class="koda_piemers">
+            <p>[<span class="str-teksts">"saraksts"</span>, <span class="str-teksts">"satur"</span>, <span class="str-teksts">"teksta"</span>, <span class="str-teksts">"elementus"</span>]</br></p>
+        </div>
+        <div class="informativi">
+            <p><i class="fa-duotone fa-circle-info fa-2xl" style="--fa-primary-color: #238640; --fa-secondary-color: #238640;"></i> Saraksta elementi ir sakārtoti, maināmi un pieļauj atkārtotas vienības.</p>
+        </div> 
+        <p>Kad mēs sakām, ka saraksti ir sakārtoti, tas nozīmē, ka elementiem ir noteikta secība, jeb indeksācija, un šī <b>secība nemainīsies</b>. Saraksta elementus ir iespējams arī rediģēt, kā, piemēram, pievienot, atņemt vai mainīt vienību.</p>
+        <br>
+        <br>
+        <p>Nākamais datu tips ko apgūsim ir <b>korteži</b>. Šādi izskatās kortežs:</p>
+        <div class="koda_piemers">
+            <p>(255, 1, 255)</p>
+        </div>
+        <p>Kortežu elementi arī ir sakārtoti un var atkārtoties, taču tie ir nemaināmi. Līdzīgi, kā sarakstos, korteži var saturēt arī "str" datu tipu.</p>
+        <div class="informativi">
+            <p><i class="fa-duotone fa-circle-info fa-2xl" style="--fa-primary-color: #238640; --fa-secondary-color: #238640;"></i> Šo datu struktūru pielieto, piemēram, krāsu kodi, jo to elementu vērtības nekad nemainās.</p>
+        </div> 
+        <p>Korteži arī ievēro indeksāciju.</p>
+        <br>
+        <br>
+        <p>Kā pēdējo svarīgo struktūru mēs apgūsim vārdnīcas. Šāds ir vārdnīcas piemērs:</p>
+        <div class="koda_piemers">
+            <p>{<span class="str-teksts">"marka"</span>: <span class="str-teksts">"Ford"</span>}</p>
+        </div>
+        <p>Vārdnīcās ir jāievēro, ka pirmo raksta "atslēgu" un aiz  " <b> : </b> "  raksta "atslēgas" vērtību. Šajā datu tipā ir iespējams rediģēt datus, kā arī tie ir sakārtoti.</p>
+        <div class="svarigi">
+            <p><i class="fa-duotone fa-triangle-exclamation fa-2xl" style="--fa-primary-color: #f29718; --fa-secondary-color: #f29718;"></i>SVARĪGI! Vārdnīcu atslēgas nedrīkst atkārtoties!</b></p>
+        </div>
+        
+      
+    </div>
+        
+        
+        
+    </body>
+</html>
+
